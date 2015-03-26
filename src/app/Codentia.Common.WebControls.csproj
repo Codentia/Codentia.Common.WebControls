@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D52D45D3-356B-4079-886E-C443C44325DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Codentia.Common.WebControls</RootNamespace>
+    <AssemblyName>Codentia.Common.WebControls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Codentia.Common.WebControls.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Codentia.Common.Data">
+      <HintPath>..\..\packages\Codentia.Common.Net.dll.2.0.0-dev\lib\Codentia.Common.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Codentia.Common.Helper">
+      <HintPath>..\..\packages\Codentia.Common.Net.dll.2.0.0-dev\lib\Codentia.Common.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Codentia.Common.Logging">
+      <HintPath>..\..\packages\Codentia.Common.Net.dll.2.0.0-dev\lib\Codentia.Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Codentia.Common.Net">
+      <HintPath>..\..\packages\Codentia.Common.Net.dll.2.0.0-dev\lib\Codentia.Common.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Codentia.Common.Types">
+      <HintPath>..\..\packages\Codentia.Common.Net.dll.2.0.0-dev\lib\Codentia.Common.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessibleCaptcha.cs" />
+    <Compile Include="BrowserManager.cs" />
+    <Compile Include="CascadingDropDown.cs" />
+    <Compile Include="ContactUs.cs" />
+    <Compile Include="ContactUsCollection.cs" />
+    <Compile Include="ContactUsEventArgs.cs" />
+    <Compile Include="ContactUsField.cs" />
+    <Compile Include="ControlGrid.cs" />
+    <Compile Include="ControlGridColumn.cs" />
+    <Compile Include="ControlGridColumnCollection.cs" />
+    <Compile Include="ControlGridColumnParameter.cs" />
+    <Compile Include="ControlGridColumnParameterCollection.cs" />
+    <Compile Include="CookiePermission.cs" />
+    <Compile Include="DateDropDown.cs" />
+    <Compile Include="DropDown.cs" />
+    <Compile Include="DropDownCollection.cs" />
+    <Compile Include="DropDownItem.cs" />
+    <Compile Include="DropDownItemCollection.cs" />
+    <Compile Include="GoogleAnalyticsTracker.cs" />
+    <Compile Include="GoogleMap.cs" />
+    <Compile Include="Handlers\CEAuthenticatedHandler.cs" />
+    <Compile Include="Handlers\CEGenericHandler.cs" />
+    <Compile Include="Html5\Html5Button.cs" />
+    <Compile Include="HtmlElements\Br.cs" />
+    <Compile Include="HtmlElements\Div.cs" />
+    <Compile Include="HtmlElements\H2.cs" />
+    <Compile Include="HtmlElements\H3.cs" />
+    <Compile Include="HtmlElements\H4.cs" />
+    <Compile Include="HtmlElements\H5.cs" />
+    <Compile Include="HtmlElements\Li.cs" />
+    <Compile Include="HtmlElements\CEHtmlGenericControl.cs" />
+    <Compile Include="HtmlElements\Ol.cs" />
+    <Compile Include="HtmlElements\P.cs" />
+    <Compile Include="HtmlElements\Span.cs" />
+    <Compile Include="HtmlElements\Ul.cs" />
+    <Compile Include="IdempotentButton.cs" />
+    <Compile Include="IdempotentLinkButton.cs" />
+    <Compile Include="LabelledControlList.cs" />
+    <Compile Include="LabelledControlListItem.cs" />
+    <Compile Include="LabelledControlListItemCollection.cs" />
+    <Compile Include="LightboxManager.cs" />
+    <Compile Include="CECompositeControl.cs" />
+    <Compile Include="PagingEventArgs.cs" />
+    <Compile Include="PagingManager.cs" />
+    <Compile Include="PagingToolbar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionTemplate.cs" />
+    <Compile Include="SelectionList.cs" />
+    <Compile Include="SelectionListItem.cs" />
+    <Compile Include="SelectionListItemCollection.cs" />
+    <Compile Include="TimeDropDown.cs" />
+    <Compile Include="UnorderedCheckBoxList.cs" />
+    <Compile Include="UnorderedCheckBoxListSelectable.cs" />
+    <Compile Include="UnorderedRadioButtonList.cs" />
+    <Compile Include="Validators\CECompareValidator.cs" />
+    <Compile Include="Validators\CECustomValidator.cs" />
+    <Compile Include="Validators\CERequiredFieldValidator.cs" />
+    <Compile Include="Validators\CEValidationSummary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CascadingDropDown.js" />
+    <Content Include="CookiePermission.js" />
+    <Content Include="Idempotency.js" />
+    <Content Include="JavaScriptCompatibilityLibrary.js" />
+    <Content Include="LightboxManager_builder.js" />
+    <Content Include="LightboxManager_effects.js" />
+    <Content Include="LightboxManager_lightbox-web.js" />
+    <Content Include="LightboxManager_lightbox.js" />
+    <Content Include="LightboxManager_prototype.js" />
+    <Content Include="LightboxManager_scriptaculous.js" />
+    <Content Include="SelectionList.js" />
+    <Content Include="UnitPngFix.js" />
+    <Content Include="UnorderedCheckBoxListSelectable.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.Targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cddl>
+	<ddlitem ddlid="DDL2" ddltext="Toshiba (AAAAGH)" ddlvalue="1" ddlparentvalue="1" />
+	<ddlitem ddlid="DDL2" ddltext="Sony" ddlvalue="2" ddlparentvalue="1" />
+	<ddlitem ddlid="DDL2" ddltext="Seagate" ddlvalue="3" ddlparentvalue="2" />
+	<ddlitem ddlid="DDL2" ddltext="Western Digital" ddlvalue="4" ddlparentvalue="2" />
+	<ddlitem ddlid="DDL3" ddltext="200GB" ddlvalue="1" ddlparentvalue="1" />
+	<ddlitem ddlid="DDL3" ddltext="250GB" ddlvalue="2" ddlparentvalue="1" />
+	<ddlitem ddlid="DDL3" ddltext="300GB" ddlvalue="3" ddlparentvalue="2" />
+	<ddlitem ddlid="DDL3" ddltext="350GB" ddlvalue="4" ddlparentvalue="2" />
+	<ddlitem ddlid="DDL3" ddltext="400GB" ddlvalue="5" ddlparentvalue="3" />
+	<ddlitem ddlid="DDL3" ddltext="450GB" ddlvalue="6" ddlparentvalue="3" />
+	<ddlitem ddlid="DDL3" ddltext="500GB" ddlvalue="7" ddlparentvalue="4" />
+	<ddlitem ddlid="DDL3" ddltext="1TB" ddlvalue="8" ddlparentvalue="4" />
+	<summary ddlcount="3" />
+	<summarybyname ddl_DDL1="0" ddl_DDL2="1" ddl_DDL3="2" />
+	<summarybypos pos0="ddl_DDL1" pos1="ddl_DDL2" pos2="ddl_DDL3" />
+	<summaryofchildren DDL1="ddl_DDL2" DDL2="ddl_DDL3" />
+</cddl>

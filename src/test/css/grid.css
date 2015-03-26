@@ -1,0 +1,239 @@
+/*
+Copyright 2008 - MultiLayerDesign
+http://multilayerdesign.com/
+
+Maintemplate CSS file - GRID CSS - use in conjunction with grid.htm as a base css file for grids using UL, LI - no tables used in this at all, not now, not ever
+-extend as needed
+
+Main divs are seo friendly and work in firefox, safari, chrome, opera 
+and suppose we have to support ie7 and not for long ie6
+
+
+History:
+    Author      Date        Changed
+    KJ          27/11/2008  created stylesheet for base grid - initial version subject to change to suit - wip
+
+
+Known Issues:   Firefox bug with right align, need to find valid workaround or wait for mozilla fix?
+
+Works in:       Firefox (bar bug above), IE7, Opera, Safari, Chrome
+NO IE6 SUPPORT
+
+border: dashed 1px red;
+*/
+
+.grdtable
+{
+    position: relative;
+    float: left;
+    width: auto; /* changeable */
+    height: auto;
+    border: solid 1px #000;
+    background-color: #f3f9fd;
+    color: #000;
+    /*min-width: 1226px;*/ /*set this to avoid table collapsing if browser width changed*/
+}
+
+/* generic stripe colour from above background colour, this is the contrast line */
+.zebrastripe
+{
+    background-color: #d4ecfc;
+}
+
+.grdheader
+{
+    position: relative;
+    float: left;
+    background: #243286; /*url(./images/grid/headerbar) repeat-x; -optional*/
+    color: #fff;
+    font-weight: bold;
+    border: none;    
+}
+
+.grdheader li
+{
+    float: left;
+}
+
+.grdrow
+{
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;    
+}
+
+.grdrow ul
+{
+    position: relative;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px #ccc;
+}
+
+.grdrow ul li
+{
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0 5px 0 5px;
+    list-style: none;
+    border-left: solid 1px #ccc;
+    white-space: normal;
+}
+
+.grdrow ul:hover /*, .grdrow ul li:hover*/
+{
+    background: #a9d4f4;
+}
+
+.bnone, .grdrow ul li.first, .last ul
+{
+    border: none;
+}
+
+.footer
+{
+	border-top: solid 1px black;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.footer div
+{
+	float: right;
+	width: 162px;
+}
+
+.footer div input
+{
+	width: 80px;
+}
+
+
+/* ALIGNMENT - 
+EVERYTHING PRETTY MUCH - LEFT ALIGNED
+NUMERICAL - RIGHT ALIGNED
+ADD IN CENTRAL ALIGNED - OPTIONAL
+*/
+
+.la 
+{
+    text-align: left;
+}
+    
+.ra
+{
+    text-align: right;    
+}
+
+.ca 
+{
+    text-align: center;
+}
+
+.total
+{
+	font-weight: bold;
+}
+
+/* FIXED WIDTHS TRIAL */
+.width50
+{
+    width: 50px;
+    min-width: 50px;    
+}
+
+.width50 input
+{
+	width: 45px;
+}
+
+.width75
+{
+    width: 75px;
+    min-width: 75px;    
+}
+
+.width75 input
+{
+	width: 75px;
+}
+
+.width100 
+{
+    width: 100px;
+    min-width: 100px;    
+}
+
+.width100 input
+{
+	width: 95px;
+}
+
+.width150
+{
+    width: 150px;
+    min-width: 150px;
+}
+
+.width150 input
+{
+	width: 145px;
+}
+
+.width200
+{
+    width: 200px;
+    min-width: 200px;
+}
+
+.width200 input
+{
+	width: 195px;
+}
+
+.width250
+{
+    width: 250px;
+    min-width: 250px;
+}
+
+.width300
+{
+    width: 300px;
+    min-width: 300px;
+}
+
+.width350
+{
+    width: 350px;
+    min-width: 350px;
+}
+
+.width400
+{
+    width: 400px;
+    min-width: 400px;
+}
+
+.width450
+{
+    width: 450px;
+    min-width: 450px;
+}
+
+.width500
+{
+    width: 500px;
+    min-width: 500px;
+}

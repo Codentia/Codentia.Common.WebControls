@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codentia.Common.WebControls", "src\app\Codentia.Common.WebControls.csproj", "{D52D45D3-356B-4079-886E-C443C44325DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codentia.Common.WebControls.Test", "src\test\Codentia.Common.WebControls.Test.csproj", "{1D436DB2-A6EB-4AF0-A7AA-E9CEF062B5D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D52D45D3-356B-4079-886E-C443C44325DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52D45D3-356B-4079-886E-C443C44325DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52D45D3-356B-4079-886E-C443C44325DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52D45D3-356B-4079-886E-C443C44325DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D436DB2-A6EB-4AF0-A7AA-E9CEF062B5D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D436DB2-A6EB-4AF0-A7AA-E9CEF062B5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D436DB2-A6EB-4AF0-A7AA-E9CEF062B5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D436DB2-A6EB-4AF0-A7AA-E9CEF062B5D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

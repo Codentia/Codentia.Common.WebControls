@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D436DB2-A6EB-4AF0-A7AA-E9CEF062B5D2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Codentia.Common.WebControls.Test</RootNamespace>
+    <AssemblyName>Codentia.Common.WebControls.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessibleCaptcha.aspx" />
+    <Content Include="CascadingDropDownTest.aspx" />
+    <Content Include="ContactUsTest.aspx" />
+    <Content Include="ControlGridTest.aspx" />
+    <Content Include="ControlGrid_Editable.aspx" />
+    <Content Include="CookiePermissionTest.aspx" />
+    <Content Include="css\grid.css" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\StyleSheetSwitcher\1.css" />
+    <Content Include="css\StyleSheetSwitcher\2.css" />
+    <Content Include="css\StyleSheetSwitcher\3.css" />
+    <Content Include="DateDropDownTest.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="IdempotentLinkAndButtonTest.aspx" />
+    <Content Include="images\lb1.jpg" />
+    <Content Include="images\lb2.jpg" />
+    <Content Include="images\lb3.jpg" />
+    <Content Include="images\lightbox\bullet.gif" />
+    <Content Include="images\lightbox\close.gif" />
+    <Content Include="images\lightbox\closelabel.gif" />
+    <Content Include="images\lightbox\donate-button.gif" />
+    <Content Include="images\lightbox\download-icon.gif" />
+    <Content Include="images\lightbox\image-1.jpg" />
+    <Content Include="images\lightbox\loading.gif" />
+    <Content Include="images\lightbox\nextlabel.gif" />
+    <Content Include="images\lightbox\prevlabel.gif" />
+    <Content Include="images\lightbox\thumb-1.jpg" />
+    <Content Include="LabelledControlListTest.aspx" />
+    <Content Include="LightboxManagerTest.aspx" />
+    <Content Include="CEValidationSummaryTest.aspx" />
+    <Content Include="PagingToolbarTest.aspx" />
+    <Content Include="SelectionListTest.aspx" />
+    <Content Include="TimeDropDownTest.aspx" />
+    <Content Include="UnorderedCheckBoxListTest.aspx" />
+    <Content Include="UnorderedRadioButtonListTest.aspx" />
+    <Content Include="Web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XMLFile1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessibleCaptcha.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AccessibleCaptcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessibleCaptcha.aspx.designer.cs">
+      <DependentUpon>AccessibleCaptcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CascadingDropDownTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CascadingDropDownTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CascadingDropDownTest.aspx.designer.cs">
+      <DependentUpon>CascadingDropDownTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUsTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ContactUsTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUsTest.aspx.designer.cs">
+      <DependentUpon>ContactUsTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlGridTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ControlGridTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlGridTest.aspx.designer.cs">
+      <DependentUpon>ControlGridTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlGrid_Editable.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ControlGrid_Editable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlGrid_Editable.aspx.designer.cs">
+      <DependentUpon>ControlGrid_Editable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CookiePermissionTest.aspx.cs">
+      <DependentUpon>CookiePermissionTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CookiePermissionTest.aspx.designer.cs">
+      <DependentUpon>CookiePermissionTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DateDropDownTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DateDropDownTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DateDropDownTest.aspx.designer.cs">
+      <DependentUpon>DateDropDownTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdempotentLinkAndButtonTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>IdempotentLinkAndButtonTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdempotentLinkAndButtonTest.aspx.designer.cs">
+      <DependentUpon>IdempotentLinkAndButtonTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelledControlListTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>LabelledControlListTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelledControlListTest.aspx.designer.cs">
+      <DependentUpon>LabelledControlListTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LightboxManagerTest.aspx.cs">
+      <DependentUpon>LightboxManagerTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LightboxManagerTest.aspx.designer.cs">
+      <DependentUpon>LightboxManagerTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CEValidationSummaryTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CEValidationSummaryTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CEValidationSummaryTest.aspx.designer.cs">
+      <DependentUpon>CEValidationSummaryTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagingToolbarTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PagingToolbarTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagingToolbarTest.aspx.designer.cs">
+      <DependentUpon>PagingToolbarTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectionListTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SelectionListTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionListTest.aspx.designer.cs">
+      <DependentUpon>SelectionListTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeDropDownTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>TimeDropDownTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeDropDownTest.aspx.designer.cs">
+      <DependentUpon>TimeDropDownTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnorderedCheckBoxListTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>UnorderedCheckBoxListTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnorderedCheckBoxListTest.aspx.designer.cs">
+      <DependentUpon>UnorderedCheckBoxListTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnorderedRadioButtonListTest.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>UnorderedRadioButtonListTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnorderedRadioButtonListTest.aspx.designer.cs">
+      <DependentUpon>UnorderedRadioButtonListTest.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\app\Codentia.Common.WebControls.csproj">
+      <Project>{d52d45d3-356b-4079-886e-c443c44325db}</Project>
+      <Name>Codentia.Common.WebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>20008</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
