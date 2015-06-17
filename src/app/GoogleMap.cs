@@ -83,18 +83,20 @@ namespace Codentia.Common.WebControls
             string googleMapUrl = "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false";
             Page.ClientScript.RegisterClientScriptInclude("GoogleMap", googleMapUrl);
 
-            string googleMapScript = "var mapOptions = {" +
+            string googleMapScript = "function LoadGoogleMap() {{" +
+                "var mapOptions = {{" +
                 "zoom: 17," +
                 "center: new google.maps.LatLng({1})," +
                 "mapTypeId: google.maps.MapTypeId.ROADMAP" +
-            "};" +
-            "map = new google.maps.Map(document.getElementById('{0}'), mapOptions); {2}";
+            "}};" +
+            "map = new google.maps.Map(document.getElementById('{0}'), mapOptions); {2}" +
+            "}}";
 
             string centreMarker = string.Empty;
 
             if (_markCentre)
             {
-                centreMarker = string.Format("var marker = new google.maps.Marker({position: new google.maps.LatLng({0}), map: map, title: '{1}'});", _mapCentre, _centreTitle);
+                centreMarker = string.Format("var marker = new google.maps.Marker({{position: new google.maps.LatLng({0}), map: map, title: '{1}'}});", _mapCentre, _centreTitle);
             }
 
             googleMapScript = string.Format(googleMapScript, _mapDivClientId, _mapCentre, centreMarker);
