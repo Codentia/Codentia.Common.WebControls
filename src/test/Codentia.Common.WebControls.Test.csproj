@@ -113,35 +113,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessibleCaptcha.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>AccessibleCaptcha.aspx</DependentUpon>
     </Compile>
     <Compile Include="AccessibleCaptcha.aspx.designer.cs">
       <DependentUpon>AccessibleCaptcha.aspx</DependentUpon>
     </Compile>
     <Compile Include="CascadingDropDownTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>CascadingDropDownTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="CascadingDropDownTest.aspx.designer.cs">
       <DependentUpon>CascadingDropDownTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContactUsTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>ContactUsTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContactUsTest.aspx.designer.cs">
       <DependentUpon>ContactUsTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlGridTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>ControlGridTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlGridTest.aspx.designer.cs">
       <DependentUpon>ControlGridTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlGrid_Editable.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>ControlGrid_Editable.aspx</DependentUpon>
     </Compile>
     <Compile Include="ControlGrid_Editable.aspx.designer.cs">
@@ -149,34 +144,29 @@
     </Compile>
     <Compile Include="CookiePermissionTest.aspx.cs">
       <DependentUpon>CookiePermissionTest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CookiePermissionTest.aspx.designer.cs">
       <DependentUpon>CookiePermissionTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="DateDropDownTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>DateDropDownTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="DateDropDownTest.aspx.designer.cs">
       <DependentUpon>DateDropDownTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="IdempotentLinkAndButtonTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>IdempotentLinkAndButtonTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="IdempotentLinkAndButtonTest.aspx.designer.cs">
       <DependentUpon>IdempotentLinkAndButtonTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="LabelledControlListTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>LabelledControlListTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="LabelledControlListTest.aspx.designer.cs">
@@ -184,20 +174,17 @@
     </Compile>
     <Compile Include="LightboxManagerTest.aspx.cs">
       <DependentUpon>LightboxManagerTest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LightboxManagerTest.aspx.designer.cs">
       <DependentUpon>LightboxManagerTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="CEValidationSummaryTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>CEValidationSummaryTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="CEValidationSummaryTest.aspx.designer.cs">
       <DependentUpon>CEValidationSummaryTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagingToolbarTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>PagingToolbarTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagingToolbarTest.aspx.designer.cs">
@@ -205,28 +192,24 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectionListTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>SelectionListTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="SelectionListTest.aspx.designer.cs">
       <DependentUpon>SelectionListTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="TimeDropDownTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>TimeDropDownTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="TimeDropDownTest.aspx.designer.cs">
       <DependentUpon>TimeDropDownTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="UnorderedCheckBoxListTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>UnorderedCheckBoxListTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="UnorderedCheckBoxListTest.aspx.designer.cs">
       <DependentUpon>UnorderedCheckBoxListTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="UnorderedRadioButtonListTest.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>UnorderedRadioButtonListTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="UnorderedRadioButtonListTest.aspx.designer.cs">
